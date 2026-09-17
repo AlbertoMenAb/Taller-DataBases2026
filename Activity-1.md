@@ -66,9 +66,10 @@ La función `run()` permite ejecutar instrucciones que modifican la estructura o
 
 Esta configuración se realiza una sola vez al inicio, ya que las tres tablas utilizan la misma conexión y las mismas funciones.
 
-### Evidencia
+<div align="center">
+  <img src="../img/Declaración_de_conexión_y_funciones.png" alt="ruta de instalación" width="50%">
+</div>
 
-![Declaración de conexión y funciones](imagenes/Declaracion_Conexion_Funciones.png)
 
 ---
 
