@@ -25,7 +25,7 @@
 
 </div>
 
-# Práctica de SQL con Python y SQLite
+
 
 ## Índice
 
@@ -90,7 +90,7 @@ Posteriormente, mediante `CREATE TABLE`, se definió la estructura de la tabla, 
 Finalmente, se confirmó la creación mediante `conn.commit()` y se mostró el mensaje `"Tablas creadas: Comidas"`, indicando que la operación fue ejecutada correctamente.
 
 <div align="center">
-  <img src="img/CREATE_TableComidas.png" alt="Fig. 1 CREATE Table Comidas" width="50%">
+  <img src="img/CREATE_Table_Comidas.png" alt="Fig. 2 CREATE Table Comidas" width="50%">
 </div>
 
 ---
@@ -103,9 +103,9 @@ Los datos representan diferentes alimentos, como Ensalada Rusa, Pollo Frito, Hel
 
 Después de realizar la inserción, se ejecutó una consulta `SELECT * FROM Comidas` para comprobar que los registros habían sido almacenados correctamente. La función `run()` también muestra el mensaje de confirmación correspondiente a la ejecución de la operación.
 
-### Evidencia
-
-![INSERT Comidas](imagenes/Insert_Comidas.png)
+<div align="center">
+  <img src="img/INSERT_Comidas.png" alt="Fig. 3 INSERT Comidas" width="50%">
+</div>
 
 ---
 
@@ -117,9 +117,9 @@ Después se realizó una segunda modificación para establecer específicamente 
 
 Finalmente, se ejecutó una consulta `SELECT` para comprobar los cambios realizados. El resultado permite verificar que el Helado y la Sopa aparecen ahora como disponibles, mientras que la Ensalada Rusa aparece como no disponible.
 
-### Evidencia
-
-![UPDATE Comidas](imagenes/Update_Comidas.png)
+<div align="center">
+  <img src="img/UPDATE_Comidas.png" alt="Fig. 4 UPDATE Comidas" width="50%">
+</div>
 
 ---
 
@@ -129,9 +129,9 @@ Finalmente, se utilizó la instrucción `DELETE` para eliminar un registro de la
 
 Después de ejecutar la eliminación, se realizó nuevamente una consulta `SELECT * FROM Comidas` para comprobar el resultado. En la información obtenida ya no aparece la Ensalada Rusa, mientras que los demás registros permanecen en la tabla, lo que permite comprobar que la eliminación se realizó sobre el registro indicado.
 
-### Evidencia
-
-![DELETE Comidas](imagenes/Delete_Comidas.png)
+<div align="center">
+  <img src="img/DELETE_Comidas.png" alt="Fig. 5 DELETE Comidas" width="50%">
+</div>
 
 ---
 
@@ -153,9 +153,9 @@ Después, mediante `CREATE TABLE`, se definió la estructura de la tabla con los
 
 Una vez creada la estructura, se confirmó la operación mediante `commit()` y se mostró el mensaje `"Tabla creada: Alumno"`, indicando que la tabla fue creada correctamente.
 
-### Evidencia
-
-![CREATE Alumno](imagenes/Create_Alumno.png)
+<div align="center">
+  <img src="img/CREATE_Table_Alumno.png" alt="Fig. 6 CREATE Table Alumno" width="50%">
+</div>
 
 ---
 
@@ -165,9 +165,9 @@ Una vez creada la tabla, se realizó la inserción de cinco registros mediante l
 
 Se agregaron los registros de Estela, Raul, Aurora, Cristina y Tobias, con diferentes grados, edades y promedios. Posteriormente, se utilizó una consulta `SELECT * FROM Alumno` para comprobar que los cinco registros fueron almacenados correctamente y visualizar la información resultante de la inserción.
 
-### Evidencia
-
-![INSERT Alumno](imagenes/Insert_Alumno.png)
+<div align="center">
+  <img src="img/INSERT_Alumno.png" alt="Fig. 7 INSERT Alumno" width="50%">
+</div>
 
 ---
 
@@ -179,9 +179,9 @@ Para identificar específicamente el registro que debía modificarse se utilizó
 
 Finalmente, se ejecutó una consulta `SELECT` utilizando `WHERE grado = '5to A'`, con el propósito de comprobar qué alumnos pertenecen a dicho grado después de realizar la modificación. El resultado permite verificar que Cristina aparece ahora junto con los demás alumnos que pertenecen a `5to A`.
 
-### Evidencia
-
-![UPDATE Alumno](imagenes/Update_Alumno.png)
+<div align="center">
+  <img src="img/UPDATE_Alumno.png" alt="Fig. 8 UPDATE Alumno" width="50%">
+</div>
 
 ---
 
@@ -193,9 +193,9 @@ Para seleccionar únicamente su registro se utilizó la condición `WHERE id_Alu
 
 Después de ejecutar la eliminación, se realizó nuevamente una consulta `SELECT * FROM Alumno` para comprobar el estado final de la tabla. Como resultado, el registro de Tobias ya no aparece y permanecen los cuatro alumnos restantes.
 
-### Evidencia
-
-![DELETE Alumno](imagenes/Delete_Alumno.png)
+<div align="center">
+  <img src="img/DELETE_Alumno.png" alt="Fig. 9 DELETE Alumno" width="50%">
+</div>
 
 ---
 
@@ -219,9 +219,9 @@ El campo `existencia` se dejó sin esta restricción para permitir almacenar la 
 
 Finalmente, se confirmó la creación mediante `commit()` y se mostró el mensaje `"Tabla Creada: Productos"`, comprobando que la estructura fue creada correctamente.
 
-### Evidencia
-
-![CREATE Productos](imagenes/Create_Productos.png)
+<div align="center">
+  <img src="img/CREATE_Table_Productos.png" alt="Fig. 10 CREATE Table Productos" width="50%">
+</div>
 
 ---
 
@@ -233,9 +233,9 @@ Los productos registrados fueron CocaCola, Monster, Papas Adobadas y Tortillas, 
 
 Después de realizar la inserción, se ejecutó una consulta `SELECT * FROM Productos` para visualizar los registros y comprobar que los datos fueron almacenados correctamente en la tabla.
 
-### Evidencia
-
-![INSERT Productos](imagenes/Insert_Productos.png)
+<div align="center">
+  <img src="img/INSERT_Productos.png" alt="Fig. 11 INSERT Productos" width="50%">
+</div>
 
 ---
 
@@ -249,9 +249,9 @@ Para los demás productos se mantuvo el precio original, mientras que sus existe
 
 El uso de `ELSE` permitió conservar el valor existente cuando un registro no correspondía a una de las condiciones especificadas. Finalmente, se utilizó `SELECT` para comprobar los cambios realizados y visualizar el nuevo estado de la tabla.
 
-### Evidencia
-
-![UPDATE Productos](imagenes/Update_Productos.png)
+<div align="center">
+  <img src="img/UPDATE_Productos.png" alt="Fig. 12 UPDATE Productos" width="50%">
+</div>
 
 ---
 
@@ -263,9 +263,9 @@ Para identificar específicamente el registro que debía eliminarse se utilizó 
 
 Después de ejecutar la eliminación, se realizó nuevamente una consulta `SELECT * FROM Productos` para comprobar el resultado. Como consecuencia, el registro de las Papas Adobadas dejó de aparecer, mientras que los registros de CocaCola, Monster y Tortillas permanecieron en la tabla con las modificaciones realizadas anteriormente.
 
-### Evidencia
-
-![DELETE Productos](IMAGE/Delete_Productos.png)
+<div align="center">
+  <img src="img/DELETE_Productos.png" alt="Fig. 13 DELETE Productos" width="50%">
+</div>
 
 ---
 
